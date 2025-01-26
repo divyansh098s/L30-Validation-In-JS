@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+var x = document.forms["myForm"]["fname"].value;
+var y = document.forms["myForm"]["idl"].value;
+if(x=="" || y==""){
+alert("The Above Credentials Must Be Filled");
+return false;
+}
+else
+alert("Succesfully Logged In")
+}
+</script>
+</head>
+<body>
+<form name="myForm" onsubmit="validateForm();">
+Name : <input type="text" name="fname">
+Age : <input id="idl" type="text" min="18">
+<input type="submit" value="Login">
+<p id="message"></p>
+</form>
+</body> 
+</html>
